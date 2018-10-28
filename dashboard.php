@@ -34,6 +34,7 @@
  						<td bgcolor="#D6D8DC" align="center">Password</td>
  						<td bgcolor="#D6D8DC" align="center">Level</td>
  						<td bgcolor="#D6D8DC" align="center">Fullname</td>
+ 						<td bgcolor="#D6D8DC" align="center">Action</td>
  					</tr>
  					<?php foreach($students as $student) : ?>
 			 			<tr>
@@ -42,6 +43,7 @@
 			 				<td><?= $student["password"] ?></td>
 			 				<td><?= $student["level"] ?></td>
 			 				<td><?= $student["fullname"] ?></td>
+				 			<td><a href="update.php?id=<?= $student["id"] ?>">Update</a> | <a href="delete.php?id=<?= $student["id"] ?>" onclick="return confirm('Apakah kamu yakin akan menghapus data?');">Hapus</a></td>
 			 			</tr>
 			 		<?php endforeach; ?>
  				</table>
