@@ -21,6 +21,9 @@
 
  		<div class="berita">
  			<div class="berita-baru">
+ 				<a href="create.php">
+ 					<h1 class="berita-baru">Tambahkan Siswa Baru</h1>
+ 				</a>
  			</div>
  			<br><br>
  			<div class="berita-lama">
